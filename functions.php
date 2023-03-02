@@ -1,6 +1,7 @@
 <?php
 
-require get_theme_file_path('/inc/search-route.php');
+require_once get_theme_file_path('/inc/search-route.php');
+require_once get_theme_file_path('/inc/like-route.php');
 
 function university_custom_rest()
 {
@@ -53,7 +54,7 @@ function pageBanner($args = NULL)
 function university_files()
 {
     wp_enqueue_script('google_map', '//maps.googleapis.com/maps/api/js?key=AIzaSyBbK4p3MjLS3r8DN4g5vur9Ig9kSGw1Tjo', NULL, 1.0, true);
-    wp_enqueue_script('main_university_js', get_theme_file_uri('/build/index.js'), array('jquery'), filemtime(get_theme_file_uri('/build/index.js')), true);
+    wp_enqueue_script('main_university_js', get_theme_file_uri('/build/index.js'), array('jquery'), filemtime(get_template_directory() . '/build/index.js'), true);
     wp_enqueue_style('font_awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
     wp_enqueue_style('custom_font', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
     wp_enqueue_style('university_main_styles', get_theme_file_uri('/build/style-index.css'));
