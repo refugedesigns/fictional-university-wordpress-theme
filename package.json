@@ -1,4 +1,4 @@
- {
+{
   "name": "fictional-university-theme",
   "version": "1.0.0",
   "description": "",
@@ -17,6 +17,7 @@
     "@glidejs/glide": "^3.4.1",
     "@wordpress/scripts": "*",
     "axios": "^0.21.1",
+    "dotenv": "^16.0.3",
     "normalize.css": "^8.0.1"
   }
 }
